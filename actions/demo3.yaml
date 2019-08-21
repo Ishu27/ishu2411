@@ -1,0 +1,12 @@
+---
+name: "demo3"
+runner_type: "python-script"
+description: "Print message to standard output."
+enabled: true
+entry_point: "demo3.py"
+parameters:
+    message:
+        type: "string"
+        description: "Message to print."
+        required: true
+        position: 0
