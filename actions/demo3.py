@@ -7,4 +7,4 @@ class MyEchoAction(Action):
        if message == 'working':
             return (True, message)
        else:
-            return(False, message)
+            print("Wrong parameters")
