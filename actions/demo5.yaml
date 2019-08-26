@@ -31,7 +31,7 @@ parameters:
         required: true
         position: 3
         
-     excerpt:
+     exercpt:
         type: "string"
         description: Excerpt of the book
         required: true
