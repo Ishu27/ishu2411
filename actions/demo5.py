@@ -9,10 +9,11 @@ class abc(Action):
 	def run(self,id,title,descrp,pgcnt,exercpt,publishdate):
 		
 		try:
+			x = {"ID": id, "Title":title, "Description":descrp, "PageCount":pgcent ,"Excerpt":exercpt, "PublishDate":publishdate}
 			response = requests.post("https://fakerestapi.azurewebsites.net/api/Books")
 			print(response.status_code)
 			
-			print(response.url)
+			
 			print(json.loads(response))
 			
 		except requests.exceptions.MissingSchema:
