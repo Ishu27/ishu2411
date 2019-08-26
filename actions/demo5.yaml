@@ -1,46 +1,40 @@
----
-name: "demo5"
-pack: demo10
-runner_type: "python-script"
-description: "Print message to standard output of the api get request."
-enabled: true
-entry_point: "demo5.py"
-parameters:
-   
-     id:
-        type: "integer"
-        description: "ID of the book"
+--- 
+ name: demo3
+ pack: sampack1
+ runner_type: "python-script"
+ description: Print message to standard output.
+ enabled: true
+ entry_point: "demo3.py" 
+ parameters:
+    id:
+        type: integer
+        description: "Book id."
         required: true
         position: 0
-        
-     title:
-        type: "string"
-        description: "Title of the book"
+    title:
+        type: string
+        description: "Book title."
         required: true
         position: 1
-         
-     descrp:
-        type: "string"
-        description: "Description of the book"        
+    desc:
+        type: string
+        description: "Book description."
         required: true
         position: 2
-         
-     pgcent:
-        type: "integer"
-        description: "Page Count of the book"
+    pagecount:
+        type: integer
+        description: "page count."
         required: true
         position: 3
-        
-     exercpt:
-        type: "string"
-        description: Excerpt of the book
+    excerpt:
+        type: string
+        description: "Book excerpt."
         required: true
         position: 4
-         
-     publishdate: 
-         type: "string"
-         description: "Publish date of the book"
-         required: true
-         position: 5
+    pubdate:
+        type: string
+        description: "Book publish."
+        required: true
+        position: 5
          
        
