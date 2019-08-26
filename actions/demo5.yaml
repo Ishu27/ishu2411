@@ -6,37 +6,37 @@ enabled: true
 entry_point: "demo5.py"
 parameters:
    
-     ID:
+     id:
         type: "integer"
         description: "ID of the book"
         required: true
         position: 0
         
-     Title:
+     title:
         type: "string"
         description: "Title of the book"
         required: true
         position: 1
          
-     Description:
+     descrp:
         type: "string"
         description: "Description of the book"        
         required: true
         position: 2
          
-     Pagecount:
+     pgcnt:
         type: "integer"
         description: "Page Count of the book"
         rerquired: true
         position: 3
         
-     Excerpt:
+     excerpt:
         type: "integer"
         description: Excerpt of the book
         required: true
         position: 4
          
-     PublishDate: 
+     publishdate: 
          type: "integer"
          description: "Publish date of the book"
          required: true
