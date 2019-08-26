@@ -1,0 +1,12 @@
+---
+name: "demo5"
+runner_type: "python-script"
+description: "Print message to standard output."
+enabled: true
+entry_point: "demo5.py"
+parameters:
+    url:
+        type: "string"
+        description: "URL status"
+        required: true
+        position: 0
