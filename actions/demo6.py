@@ -12,7 +12,7 @@ class MyAction(Action):
 			headers={'content-type': 'application/json'}
 			url='https://fakerestapi.azurewebsites.net/api/Books'
 			res=requests.get(url,headers=headers,data=y)
-			print(res)
+		
 			z=res.json()
 			print(z)
 			
