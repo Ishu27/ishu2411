@@ -1,0 +1,14 @@
+--- 
+ name: demo6
+ pack: demo10
+ runner_type: "python-script"
+ description: Print message to standard using the get request amnd having the output.
+ enabled: true
+ entry_point: "demo6.py" 
+ parameters:
+    id:
+        type: integer
+        description: "Unique Key To fetch the data"
+        required: true
+        position: 0
+   
