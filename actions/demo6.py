@@ -6,11 +6,9 @@ from st2common.runners.base_action import Action
 
 class MyAction(Action):
         def run(self,id):
-                try:
-			x={"ID": id}
-                	y=json.dumps(x)
-			headers={'content-type': 'application/json'}
-			url='https://fakerestapi.azurewebsites.net/api/Books/{id}'
+                try:              	
+			id1=str(id)
+			url='https://fakerestapi.azurewebsites.net/api/Books'+id1
 			res=requests.get(url,headers=headers,data=y)
 		
 			z=res.json()
