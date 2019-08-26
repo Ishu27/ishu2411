@@ -6,7 +6,7 @@ from st2common.runners.base_action import Action
 
 class abc(Action):
 	
-	def run(self, ID, Title, Description, PageCount, Exercpt, PublishDate):
+	def run(self,id,title,descrp,pgcnt,exercpt,publishdate):
 		
 		try:
 			response = requests.post("https://fakerestapi.azurewebsites.net/api/Books")
