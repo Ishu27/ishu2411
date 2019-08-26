@@ -6,10 +6,10 @@ from st2common.runners.base_action import Action
 
 class abc(Action):
 	
-	def run(self, url):
+	def run(self, ID, Title, Description, PageCount, Exercpt, PublishDate):
 		
 		try:
-			response = requests.get("url")
+			response = requests.get("https://fakerestapi.azurewebsites.net/api/Books")
 			print(response.status_code)
 			
 			print(response.url)
