@@ -1,9 +1,9 @@
 ---
 # Pack reference. It can only contain letters, digits and underscores.
-ref: demo5
+ref: demo10
 # User-friendly pack name. If this attribute contains spaces or any other special characters, then
 # the "ref" attribute must also be specified (see above).
-name: ishan1234
+name: ishan12345
 # User-friendly pack description.
 description: Simple pack containing examples of sensor, rule, and action.
 # Keywords which are used when searching for packs.
