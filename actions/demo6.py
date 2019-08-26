@@ -8,8 +8,9 @@ class MyAction(Action):
         def run(self,id):
                 try:              	
 			id1=str(id)
+			header='Accept: application/json'
 			url='https://fakerestapi.azurewebsites.net/api/Books'+id1
-			res=requests.get(url)
+			res=requests.get(url,header=header)
 		
 			z=res.json()
 			print(z)
