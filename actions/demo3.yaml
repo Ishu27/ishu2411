@@ -1,6 +1,6 @@
 ---
 name: "demo3"
-pack: 
+pack: demo10
 runner_type: "python-script"
 description: "Print message to standard output."
 enabled: true
