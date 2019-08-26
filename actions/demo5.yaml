@@ -31,13 +31,13 @@ parameters:
         position: 3
         
      excerpt:
-        type: "integer"
+        type: "string"
         description: Excerpt of the book
         required: true
         position: 4
          
      publishdate: 
-         type: "integer"
+         type: "string"
          description: "Publish date of the book"
          required: true
          position: 5
