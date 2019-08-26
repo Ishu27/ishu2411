@@ -1,3 +1,4 @@
+import json
 import sys
 import requests
 
@@ -8,9 +9,11 @@ class abc(Action):
 	def run(self, url):
 		
 		try:
-			response = requests.get(url)
+			response = requests.get("url")
 			print(response.status_code)
+			
 			print(response.url)
+			print(json.loads(response))
 			
 		except requests.exceptions.MissingSchema:
 			print("Wrong URL")
