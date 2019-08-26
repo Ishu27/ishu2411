@@ -6,7 +6,7 @@ from st2common.runners.base_action import Action
 
 class abc(Action):
 	
-	def run(self,id,title,descrp,pgcnt,exercpt,publishdate):
+	def run(self,id,title,descrp,pgcent,exercpt,publishdate):
 		
 		try:
 			x = {"ID": id, "Title":title, "Description":descrp, "PageCount":pgcent ,"Excerpt":exercpt, "PublishDate":publishdate}
