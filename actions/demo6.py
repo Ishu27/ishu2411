@@ -10,7 +10,7 @@ class MyAction(Action):
 			x={"ID": id}
                 	y=json.dumps(x)
 			headers={'content-type': 'application/json'}
-			url='https://fakerestapi.azurewebsites.net/api/Books/id'
+			url='https://fakerestapi.azurewebsites.net/api/Books/y'
 			res=requests.get(url,headers=headers,data=y)
 		
 			z=res.json()
