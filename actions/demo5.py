@@ -11,10 +11,12 @@ class abc(Action):
 		try:
 			x = {"ID": id, "Title":title, "Description":descrp, "PageCount":pgcent ,"Excerpt":exercpt, "PublishDate":publishdate}
 			response = requests.post("https://fakerestapi.azurewebsites.net/api/Books")
-			print(response.status_code)
 			
 			
-			print(json.dumps(response))
+			
+			y = json.loads(response)
+			print(y.status_code)
+			print(json.dumps(y))
 			
 		except requests.exceptions.MissingSchema:
 			print("Wrong URL")
