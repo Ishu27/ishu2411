@@ -1,10 +1,10 @@
 --- 
- name: demo3
- pack: sampack1
+ name: demo5
+ pack: ishu2411
  runner_type: "python-script"
  description: Print message to standard output.
  enabled: true
- entry_point: "demo3.py" 
+ entry_point: "demo5.py" 
  parameters:
     id:
         type: integer
