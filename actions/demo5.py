@@ -9,7 +9,7 @@ class abc(Action):
 	def run(self, ID, Title, Description, PageCount, Exercpt, PublishDate):
 		
 		try:
-			response = requests.get("https://fakerestapi.azurewebsites.net/api/Books")
+			response = requests.post("https://fakerestapi.azurewebsites.net/api/Books")
 			print(response.status_code)
 			
 			print(response.url)
