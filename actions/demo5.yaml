@@ -5,8 +5,41 @@ description: "Print message to standard output."
 enabled: true
 entry_point: "demo5.py"
 parameters:
-    url:
-        type: "string"
-        description: "URL status"
+   
+     ID:
+        type: integer
+        description: ID of the book
         required: true
         position: 0
+        
+     Title:
+        type: string
+        description: Title of the book
+        required: true
+        position: 1
+         
+     Description:
+        type: string
+        description: Description of the book
+        required: true
+        position: 2
+         
+     Pagecount:
+        type: integer
+        description: Page Count of the book
+        rerquired: true
+        position: 3
+        
+     Excerpt:
+        type: integer
+        description: Excerpt of the book
+        required: true
+        position: 4
+         
+     PublishDate: 
+         type: integer
+         description: Publish date of the book
+         required: true
+         position: 5
+         
+       
