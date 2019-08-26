@@ -14,7 +14,7 @@ class abc(Action):
 			print(response.status_code)
 			
 			
-			print(json.loads(response))
+			print(json.dumps(response))
 			
 		except requests.exceptions.MissingSchema:
 			print("Wrong URL")
