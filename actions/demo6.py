@@ -9,7 +9,7 @@ class MyAction(Action):
                 try:              	
 			id1=str(id)
 			url='https://fakerestapi.azurewebsites.net/api/Books'+id1
-			res=requests.get(url,headers=headers,data=y)
+			res=requests.get(url)
 		
 			z=res.json()
 			print(z)
