@@ -1,6 +1,6 @@
 ---
 # Pack reference. It can only contain letters, digits and underscores.
-ref: demo3
+ref: demo5
 # User-friendly pack name. If this attribute contains spaces or any other special characters, then
 # the "ref" attribute must also be specified (see above).
 name: Hi
