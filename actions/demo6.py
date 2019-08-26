@@ -8,12 +8,11 @@ class MyAction(Action):
         def run(self,id):
                 try:              	
 			id1=str(id)
-			header='Accept: application/json'
+			headers={'content-type': 'application/json'}
 			url='https://fakerestapi.azurewebsites.net/api/Books'+id1
-			res=requests.get(url,header=header)
-		
+			res=requests.get(url,headers=headers)		
 			z=res.json()
 			print(z)
 			
 		except:
-                    	 sys.exit(0)
+                    	sys.exit(0)
