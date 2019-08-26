@@ -1,5 +1,6 @@
 ---
 name: "demo5"
+pack: demo10
 runner_type: "python-script"
 description: "Print message to standard output of the api get request."
 enabled: true
