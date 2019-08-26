@@ -28,7 +28,7 @@ parameters:
      pgcnt:
         type: "integer"
         description: "Page Count of the book"
-        rerquired: true
+        required: true
         position: 3
         
      excerpt:
