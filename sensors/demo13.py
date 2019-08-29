@@ -6,6 +6,6 @@ description: "Test sensor that emits trigger."
 trigger_types:
   -
     name: "event1"
-    description: "An example trigger."
+    description: "An example of trigger."
     payload_schema:
       type: "object"
