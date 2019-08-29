@@ -1,7 +1,7 @@
 ---
 class_name: "HelloSensor"
 entry_point: "demo13.py"
-description: "Test sensor that emits triggers."
+description: "Test sensor that emits trigger."
 trigger_types:
   -
     name: "event1"
