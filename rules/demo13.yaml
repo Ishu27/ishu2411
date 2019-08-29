@@ -1,0 +1,11 @@
+---
+name: on_hello_event1
+pack: stackstrt
+description: Sample rule firing on hello_st2.event1.
+enabled: true
+trigger:
+    type: stackstrt.event1
+action:
+    ref: stackstrt.greet
+    parameters:
+        greeting: Yo
