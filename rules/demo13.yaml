@@ -1,11 +1,19 @@
 ---
-name: on_hello_event1
+name: Sample
+description: "Rule which sends an email when an email from mine.ishan@gmail.com is received"
 pack: demo10
-description: Sample rule firing on hello_st2.event1.
-enabled: true
+enabled: false
 trigger:
-    type: stackstrt.event1
+  type: email.imap.message
+  parameters: {}
+criteria:
+  trigger.from:
+    pattern: mine.ishan@gmail.com
+    type: contains
 action:
-    ref: stackstrt.greet
-    parameters:
-        greeting: Yo
+  ref: core.sendmail
+  parameters:
+    body: 'We received an email'
+    to: mine.ishan@gmail.com
+    from: stackstorm@yourcompanyname.com
+    subject: 'Email Received'
