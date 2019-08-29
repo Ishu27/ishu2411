@@ -1,10 +1,19 @@
 ---
-class_name: "HelloSensor"
-entry_point: "sensor1.py"
-description: "Test sensor that emits triggers."
+class_name: "IMAPSensor"
+entry_point: "imap_sensor.py"
+description: "Sensor that emits triggers when e-mail message is received via IMAP"
 trigger_types:
   -
-    name: "event1"
-    description: "An example trigger."
-    payload_schema:
-      type: "object"
+    name: imap.message
+    description: "An e-mail receieved via the IMAP sensor"
+    payload_info:
+      - uid
+      - from
+      - to
+      - headers
+      - subject
+      - date
+      - message_id
+      - body
+      - attachments
+      - mailbox_metadata
