@@ -4,7 +4,7 @@ description: "Rule which sends an email when an email from mine.ishan@gmail.com 
 pack: demo10
 enabled: false
 trigger:
-  type: email.imap.message
+  type: demo10.imap.message
   parameters: {}
 criteria:
   trigger.from:
