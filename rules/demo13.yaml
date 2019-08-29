@@ -1,6 +1,6 @@
 ---
 name: on_hello_event1
-pack: ishan2411
+pack: demo10
 description: Sample rule firing on hello_st2.event1.
 enabled: true
 trigger:
