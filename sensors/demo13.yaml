@@ -1,6 +1,6 @@
 ---
 class_name: "IMAPSensor"
-entry_point: "imap_sensor.py"
+entry_point: "demo13.py"
 description: "Sensor that emits triggers when e-mail message is received via IMAP"
 trigger_types:
   -
