@@ -1,6 +1,6 @@
 ---
 name: greet
-pack: stackstrt
+pack: demo10
 runner_type: "local-shell-script"
 description: Greet StackStorm!
 enabled: true
