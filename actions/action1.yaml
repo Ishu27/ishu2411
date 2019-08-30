@@ -1,6 +1,7 @@
 ---
   name: "sendemail"
   runner_type: "python-script"
+  ref: email
   description: "Send an email."
   enabled: true
   entry_point: "action1.py"
