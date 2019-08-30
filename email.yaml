@@ -4,14 +4,14 @@ smtp_accounts:
     password: "super_S3c4e3t!"
     port: 465
     secure: true
-    server: "smtp.example.com"
+    server: "smtp.gmail.com"
     smtp_auth: true
     username: "ishuwww084@gmail.com"
   - name: ishaaan
     password: "chhavi1234567"
     port: 587
     secure: true
-    server: "smtp.example.com"
+    server: "smtp.gmail.com"
     smtp_auth: true
     username: "ishuwww084@gmail.com"
 imap_accounts:
@@ -21,7 +21,7 @@ imap_accounts:
     password: "super_S3c4e3t!"
     port: 993
     secure: true
-    server: "imap.example.com"
+    server: "imap.gmail.com"
     username: "ishuwww084@gmail.com"
   - name: you
     download_attachments: true
@@ -29,7 +29,7 @@ imap_accounts:
     password: "chhavi1234567"
     port: 993
     secure: true
-    server: "imap.example.com"
+    server: "imap.gmail.com"
     username: "ishuwww084@gmail.com"
 max_attachment_size: 1024
 attachment_datastore_ttl: 1800
