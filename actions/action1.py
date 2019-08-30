@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 
 class SendEmail(Action):
     def run(self, email_from, email_to, subject, message,
-            account, email_cc=None, mime="plain", attachments=None):
+            accounts, email_cc=None, mime="plain", attachments=None):
 
         if mime not in ['plain', 'html']:
             raise ValueError('Invalid mime provided: ' + mime)
