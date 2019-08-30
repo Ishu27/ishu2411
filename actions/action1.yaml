@@ -1,5 +1,5 @@
 ---
-  name: "send_email"
+  name: "sendemail"
   runner_type: "python-script"
   description: "Send an email."
   enabled: true
