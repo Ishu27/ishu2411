@@ -1,14 +1,14 @@
 ---
 smtp_accounts:
   - name: ishuwww084
-    password: "chhavi1234567"
+    password: "super_S3c4e3t!"
     port: 465
     secure: true
     server: "smtp.gmail.com"
     smtp_auth: true
     username: "ishuwww084@gmail.com"
   - name: ishaaan
-    password: "chhavi1234567"
+    password: "super_S3c4e3t!"
     port: 587
     secure: true
     server: "smtp.gmail.com"
