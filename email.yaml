@@ -1,7 +1,7 @@
 ---
 smtp_accounts:
-  - name: me
-    password: "super_S3c4e3t!"
+  - name: ishuwww084
+    password: "chhavi1234567"
     port: 465
     secure: true
     server: "smtp.gmail.com"
@@ -18,7 +18,7 @@ imap_accounts:
   - name: me
     download_attachments: true
     folder: "INBOX"
-    password: "super_S3c4e3t!"
+    password: "chhavi1234567"
     port: 993
     secure: true
     server: "imap.gmail.com"
