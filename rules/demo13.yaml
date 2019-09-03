@@ -10,11 +10,11 @@ criteria:
   trigger.subject:
     pattern: VM create
     type: contains
-    action: 
+   action: 
         ref: demo10.sendmail
-  parameters:
-    account: ishuwww084
-    body: 'We received an email'
-    to: ishuwww084@gmail.com
-    from: stackstorm.alert@gmail.com
-    subject: 'Email Received'
+        parameters:
+          account: ishuwww084
+          body: 'We received an email'
+          to: ishuwww084@gmail.com
+          from: stackstorm.alert@gmail.com
+          subject: 'Email Received'
