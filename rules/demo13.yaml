@@ -14,7 +14,7 @@ criteria:
         ref: demo10.sendmail
         parameters:
           account: ishuwww084
-          body: 'We received an email'
-          to: ishuwww084@gmail.com
-          from: stackstorm.alert@gmail.com
+          message: 'We received an email'
+          email_to: ishuwww084@gmail.com
+          email_from: stackstorm.alert@gmail.com
           subject: 'Email Received'
