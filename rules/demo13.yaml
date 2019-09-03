@@ -7,7 +7,7 @@ trigger:
   type: demo10.smtp.message
   parameters: {}
 criteria:
-  trigger.from:
+  trigger.subject:
     pattern: VM create
     type: contains
     action: 
