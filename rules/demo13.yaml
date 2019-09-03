@@ -8,7 +8,7 @@ trigger:
   parameters: {}
 criteria:
   trigger.subject:
-    pattern: VM create
+    pattern: ishuwww084@gmail.com
     type: contains
    action: 
         ref: demo10.sendmail
