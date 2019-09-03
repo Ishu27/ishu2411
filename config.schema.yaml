@@ -39,51 +39,7 @@ smtp_accounts:
         description: "Authenticate username and password with SMTP server to send email. Default True"
         type: "boolean"
         default: true
-imap_accounts:
-  description: "IMAP accounts"
-  type: "array"
-  required: true
-  items:
-    type: "object"
-    required: true
-    properties:
-      name:
-        description: "Name of the account"
-        type: "string"
-        secret: false
-        required: true
-      server:
-        description: "Email server name - e.g. imap.gmail.com"
-        type: "string"
-        secret: false
-        required: true
-      username:
-        description: "Mailbox username"
-        type: "string"
-        required: true
-      password:
-        description: "Mailbox password."
-        type: "string"
-        secret: true
-        required: true
-      port:
-        description: "Port to connect to - e.g. 993, 143."
-        type: "integer"
-        default: 993
-        required: true
-      secure:
-        description: "Set to False to disable secure protocol. Default value is True."
-        type: "boolean"
-        default: true
-      download_attachments:
-        description: "Set to True to download attachments to datastore. Default False"
-        type: "boolean"
-        default: false
-      folder:
-        description: "Folder to check for email. Default INBOX"
-        type: "string"
-        required: false
-        default: "INBOX"
+        
 max_attachment_size:
   description: "Maxium size of downloaded attachment in bytes (default 1024)"
   type: "integer"
