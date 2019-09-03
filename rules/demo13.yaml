@@ -13,8 +13,8 @@ criteria:
 action: 
   ref: demo10.action1
   parameters:
-    account: ishuwww084
-    message: 'We received an email'
-    email_to: ishuwww084@gmail.com
+  account: ishuwww084
     email_from: stackstorm.alert@gmail.com
-    subject: 'Email Received'
+    email_to: ishuwww084@gmail.com
+    message: 'hi there senson working properly'
+    subject: 'VM created'
