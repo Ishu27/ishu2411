@@ -8,13 +8,13 @@ trigger:
   parameters: {}
 criteria:
   trigger.subject:
-    pattern: VM Create
+    pattern: ishuwww084@gmail.com
     type: contains
-   action: 
-        ref: demo10.action1
-        parameters:
-          account: ishuwww084
-          message: 'We received an email'
-          email_to: ishuwww084@gmail.com
-          email_from: stackstorm.alert@gmail.com
-          subject: 'Email Received'
+action: 
+  ref: demo10.action1
+  parameters:
+    account: ishuwww084
+    message: 'We received an email'
+    email_to: ishuwww084@gmail.com
+    email_from: stackstorm.alert@gmail.com
+    subject: 'Email Received'
