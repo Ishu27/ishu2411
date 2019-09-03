@@ -2,7 +2,7 @@
 smtp_accounts:
   - name: ishuwww084
     password: "chhavi1234567"
-    port: 465
+    port: 587
     secure: true
     server: "smtp.gmail.com"
     smtp_auth: true
