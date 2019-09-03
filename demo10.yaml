@@ -14,23 +14,7 @@ smtp_accounts:
     server: "smtp.gmail.com"
     smtp_auth: true
     username: "ishuwww084@gmail.com"
-imap_accounts:
-  - name: me
-    download_attachments: true
-    folder: "INBOX"
-    password: "chhavi1234567"
-    port: 993
-    secure: true
-    server: "imap.gmail.com"
-    username: "ishuwww084@gmail.com"
-  - name: you
-    download_attachments: true
-    folder: "INBOX"
-    password: "chhavi1234567"
-    port: 993
-    secure: true
-    server: "imap.gmail.com"
-    username: "ishuwww084@gmail.com"
+
 max_attachment_size: 1024
 attachment_datastore_ttl: 1800
 sensor_smtp_listen_ip: '127.0.0.1'
