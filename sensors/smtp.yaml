@@ -1,6 +1,7 @@
 ---
 class_name: "SMTPSensor"
 entry_point: "smtp.py"
+ref: demo10
 description: "Sensor that emits triggers when e-mail message is received via SMTP"
 trigger_types:
   -
