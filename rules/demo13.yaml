@@ -13,7 +13,7 @@ criteria:
 action: 
   ref: demo10.action1
   parameters:
-  account: ishuwww084
+    account: ishuwww084
     email_from: stackstorm.alert@gmail.com
     email_to: ishuwww084@gmail.com
     message: 'hi there senson working properly'
