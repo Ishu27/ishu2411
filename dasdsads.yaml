@@ -1,0 +1,52 @@
+---
+version: '1.0'
+
+description: A workflow to process an github deployment event and install a pack if the environment matches.
+
+input:
+  - Group_Name
+  - Location
+  - VM_Name
+  - from
+  
+vars:
+  - Sub_id: '2f50f202-0a84-4c8c-a929-fcc5a3174590'
+  - C_id: '94c1d9ea-ffd1-4340-8f19-d3ad284805d8'
+  - Secret: 'uJUcbJbJjN3Y3TXYRR*6lUVuV/Z0Av@]'
+  - T_id:  'd5656af4-b7b3-45b9-9346-fb0547921fb7'
+  - account: 'me'
+  - email_from: 'stackstorm.alert@gmail.com'
+  - message: 'Vm request is compleated'
+  - subject: 'VM created'
+  - from123: 'harsh6100@gmail.com'
+  
+tasks:
+  create_vm:
+    action: azure_vm.create_vm
+    input:      
+      Subcription_id: <% ctx().Sub_id %>
+      Location: <% ctx().Location %>
+      VM_Name: <% ctx().VM_Name %>
+      Group_Name: <% ctx().Group_Name %>
+      Client_Id: <% ctx().C_id %>
+      Secret: <% ctx().Secret %>
+      Tenant_Id: <% ctx().T_id %>      
+    next:
+      - when: <% succeeded() %>
+        do:
+          - abc
+      - when: <% failed() %>
+        do:
+          - xyz
+  xyz:
+    action: azure_vm.send_email
+    input:
+      account: <% ctx().account %>
+      email_from: <% ctx().email_from %>
+      email_to: <% ctx().from123 %>
+      message: <% ctx().message %>
+      subject: <% ctx().subject %>         
+  abc:
+    action: core.local
+    input:
+      cmd: echo hi     
